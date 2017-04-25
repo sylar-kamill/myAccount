@@ -23,7 +23,8 @@ var myData=[
 	["YY", "", "cc7811bcc1642bfb03cff0db9d051608a5", "d1d481af7596879a0fdd003ec628"],
 	["DELL外星人服务码", "", "9e272393e85074031aa811"],
 	["Airbnb爱彼迎", "https://zh.airbnb.com/", "cc7811bcc1642bfb03cf81df998f31ce37dc044708f7", "d17208eacf6928f305c20350d017"],
-	["booking", "", "cc7811bcc1642bfb03cf81df998f31ce37dc04a919dd", "c76009b8d77b2cf404e1922d"]
+	["booking", "", "cc7811bcc1642bfb03cf81df998f31ce37dc04a919dd", "c76009b8d77b2cf404e1922d"],
+	["Adobe", "", "cc7811bcc1642bfb03cf81df998f31ce37dc03d5f9d9", "e7534beb973c26f4036b915f"]
 ];
 (function($){
     $.createNew=function() {
