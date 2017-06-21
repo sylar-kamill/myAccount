@@ -4,6 +4,9 @@ jQuery(function(){
 	$common.createNew.init();
 });
 var myData=[
+	["微信", "", "972642eb95307cae5e99f003dba7b9", "cc7811bcc1642bfb03cff0dc9d03f8069f","c76009b8d77b2cf4043fd455"],
+	["微博","","cc7811bcc1642bfb03cf81df998f31ce37dc01f9f350","c76009b8d77b74af5f057a5b69"],
+	["booking", "", "cc7811bcc1642bfb03cf81df998f31ce37dc04a919dd", "c76009b8d77b2cf404e1922d"],
 	["Flying Blue", "", "cc7811bcc1642bfb03cf81df998f31ce37dc02d451ef", "932448e09c310418b9fc"],
 	["个人税务", "http://www.tax.sh.gov.cn", "cf7740a3cc7d28f307c9a98fc5de0413f917", "c37e1bb0c8322ff102cba482c5d875cc188061b017737521023a934d","d6c2c9f6759c8f960fdfa2672ebb4f6e0061a62c"],
 	["P站-pixiv", "http://www.pixiv.net", "cc7811bcc1642bfb03cf8189c6d876c176d23ceb0300d469","c76009b8d77b2cf405c09e69"],
@@ -23,9 +26,7 @@ var myData=[
 	["YY", "", "cc7811bcc1642bfb03cff0db9d051608a5", "d1d481af7596879a0fdd003ec628"],
 	["DELL外星人服务码", "", "9e272393e85074031aa811"],
 	["Airbnb爱彼迎", "https://zh.airbnb.com/", "cc7811bcc1642bfb03cf81df998f31ce37dc044708f7", "d17208eacf6928f305c20350d017"],
-	["booking", "", "cc7811bcc1642bfb03cf81df998f31ce37dc04a919dd", "c76009b8d77b2cf404e1922d"],
 	["Adobe", "", "cc7811bcc1642bfb03cf81df998f31ce37dc03d5f9d9", "e7534beb973c26f4036b915f"],
-	["微信", "", "972642eb95307cae5e99f003dba7b9", "cc7811bcc1642bfb03cff0dc9d03f8069f","c76009b8d77b2cf4043fd455"],
 	["126邮箱", "", "cc7811bcc1642bfb03cf81df998f31ce37dc01dfb2b8", "932449ec9d3a72f108c3a882c701230198"],
 	["微信公众平台","https://mp.weixin.qq.com/","95244aee943e76af5feeb09f85da70c002730be3","c76009b8d77b2cf4589bf70437d8ee"],
 	["微信开发平台","https://open.weixin.qq.com/","cc7811bcc1642bfb03cf81df998f31ce37dc0349cfdd","c76009b8d77b2cf403766c51"]
