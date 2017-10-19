@@ -29,13 +29,13 @@ var myData=[
 	["Adobe", "", "cc7811bcc1642bfb03cf81df998f31ce37dc03d5f9d9", "e7534beb973c26f4036b915f"],
 	["126邮箱", "", "cc7811bcc1642bfb03cf81df998f31ce37dc01dfb2b8", "932449ec9d3a72f108c3a882c701230198"],
 	["微信公众平台","https://mp.weixin.qq.com/","95244aee943e76af5feeb09f85da70c002730be3","c76009b8d77b2cf4589bf70437d8ee"],
-	["微信开发平台","https://open.weixin.qq.com/","cc7811bcc1642bfb03cf81df998f31ce37dc0349cfdd","c76009b8d77b2cf403766c51"]
+	["微信开发平台","https://open.weixin.qq.com/","cc7811bcc1642bfb03cf81df998f31ce37dc0349cfdd","c76009b8d77b2cf403766c51"],
+	["vultr","https://www.vultr.com/","cc7811bcc1642bfb03cf81df998f31ce37dc04b2e982","e7f5c2ae2dc381920ed8af610025a53c"]
 ];
 (function($){
     $.createNew=function() {
         var $createNew={};
         $createNew.init=function(){
-			//$createNew.showAccount("war3kamill");
 			$(".inputPW").change(function(){
 				$(".pwContenter").hide();
 				$createNew.showAccount($(this).val());
