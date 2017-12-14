@@ -31,8 +31,8 @@ var myData=[
 	["微信公众平台","https://mp.weixin.qq.com/","95244aee943e76af5feeb09f85da70c002730be3","c76009b8d77b2cf4589bf70437d8ee"],
 	["微信开发平台","https://open.weixin.qq.com/","cc7811bcc1642bfb03cf81df998f31ce37dc0349cfdd","c76009b8d77b2cf403766c51"],
 	["vultr","https://www.vultr.com/","cc7811bcc1642bfb03cf81df998f31ce37dc04b2e982","e7f5c2ae2dc381920ed8af610025a53c"],
-	['腾讯云','https://cloud.tencent.com','cc7811bcc1642bfb03cf81df998f31ce37dc00ca52d5','f56a16b8d63970ac29daa20553e83f'],
-	['shadowsock','97234ef7963a70b4589af4c0928d03afa7c4','d67c08ad813a75ae5d9d02834bd8','e8213cb4ea6221f230f904ae26a9','ea7c09fc963804f40ecbad8bd80436015b'],
+	['腾讯云','https://cloud.tencent.com/','cc7811bcc1642bfb03cf81df998f31ce37dc00ca52d5','f56a16b8d63970ac29daa20553e83f'],
+	['shadowsock','','97234ef7963a70b4589af4c0928d03afa7c4','d67c08ad813a75ae5d9d02834bd8','e8213cb4ea6221f230f904ae26a9','ea7c09fc963804f40ecbad8bd80436015b'],
 	['电信宽带','','ed574ae9943f7cad5d9af9d90566f963','c7774eed913d73ae5c9c016bf707','932b4ee0943972a301cbedce']
 ];
 (function($){
