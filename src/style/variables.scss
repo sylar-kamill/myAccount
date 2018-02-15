@@ -1,0 +1,97 @@
+//sprite图片
+@mixin sprite{
+	content:			'';
+	display:			block;
+	background: 		url('../../assets/imgs/sprite.png') no-repeat;
+	font-size: 			0;
+	background-size: 	800px 400px;
+	position:			relative;
+	top:				0;
+	left:				0;
+}
+@mixin spriteResize($per,$w,$h,$px,$py){
+	content:			'';
+	display:			block;
+	background: 		url('../../assets/imgs/sprite.png') no-repeat;
+	font-size: 			0;
+	background-size: 	800px*$per 400px*$per;
+	position:			relative;
+	top:				0;
+	left:				0;
+	background-position: $px*$per $py*$per;
+	width: $w*$per;
+	height: $h*$per;
+}
+//渐变
+@mixin lightBtn($start,$end){
+	background: 		-webkit-linear-gradient($start, $end);
+	background: 		-moz-linear-gradient($start, $end);
+	background: 		-o-linear-gradient($start, $end);
+	background: 		linear-gradient($start, $end);
+}
+//清除浮动
+@mixin cf{
+	clear:both;
+	zoom:1;
+	&::before,
+	&::after{content:"";display:block;overflow:hidden}
+	&::after{clear:both}
+}
+//超出显示省略号
+@mixin nowrap{
+	white-space: 		nowrap;
+	text-overflow: 		ellipsis;
+	overflow: 			hidden;
+}
+// how to use: @include transform(translate(5px,0));
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+            transform: $transforms;
+}
+
+// how to use: @include translate(5px,0);
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// how to use: @include skew(30,0);
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+// how to use: @include radius(5px);
+@mixin radius($radius) {
+			 border-radius: $radius;
+	 -webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+}
+// how to use: @include radius(5px);
+@mixin shadow($shadow) {
+			box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	   -moz-box-shadow: $shadow;
+}
+// how to use: @include origin(0 0);
+@mixin origin($origin) {
+			transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+	   -moz-transform-origin: $origin;
+		 -o-transform-origin: $origin;
+		-ms-transform-origin: $origin;
+}
+//how to use: @include rotate(90deg);
+@mixin rotate($deg){
+	transform:rotate($deg);
+	-ms-transform:rotate($deg); 	/* IE 9 */
+	-moz-transform:rotate($deg); 	/* Firefox */
+	-webkit-transform:rotate($deg); /* Safari 和 Chrome */
+	-o-transform:rotate($deg);		/* Opera */
+}
+// how to use: @include placehoder-color(#fff);
+@mixin placehoder-color($color){
+	::-webkit-input-placeholder { color:$color; }
+	::-moz-placeholder { color:$color; } /* firefox 19+ */
+	:-ms-input-placeholder { color:$color; } /* Internet Explorer 10+ */
+	:-moz-placeholder { color:$color; } /* firefox 14-18 */
+}

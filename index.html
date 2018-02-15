@@ -1,28 +1,31 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<title>Account</title>
-<style>
-*{padding:0; margin:0;}
-body{background:#000; font-size:16px; color:#CCC; padding:10px 30px; font-family:"SimHei", Arial, Helvetica, sans-serif;}
-ul li{margin-bottom:20px;}
-ul li p{padding-left:15px; line-height:24px;}
-ul li p:nth-child(1){color:#fff; font-size:18px; padding-left:0;}
-.pwContenter{margin:0 auto; width:300px; height:32px; font-size:0; display:block; padding-top:100px;}
-.pwContenter input{line-height:32px; font-size:24px; display:inline-block; outline:0; border:none;}
-.pwContenter .inputPW{width:70%; margin-right:5%; text-indent:10px;}
-.pwContenter .enter{width:24%;}
-</style>
-</head>
-<body>
-	<div class="pwContenter">
-		<input class="inputPW" type="password"/>
-		<input class="enter" type="button" value="enter"/>
-	</div>
-	<ul class="main"></ul>
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
-</body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="app/css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container" data-view='static'>
+                <!--page-->
+                <div class="page">
+                    <ul class="enterBlock">
+                        <li data-id="sylar">
+                            <p class="userName">Sylar</p>
+                            <input class="pw" placeholder=""/>
+                            <em class="goBtn">-></em>
+                        </li>
+                        <li data-id="nasa">
+                            <p class="userName">Nasa</p>
+                            <input class="pw" placeholder=""/>
+                            <em class="goBtn">-></em>
+                        </li>
+                    </ul>
+                    <ul class="dataFalls">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="app/js/vendor.js" data-main="app/js/common"></script>
+    </body>
 </html>

@@ -1,0 +1,31 @@
+.cf{@include cf;}
+.fl{float:left}
+.fr{float:right}
+//Form
+.flexText{
+    position: relative; min-height: 40px; border: #000 1px solid;
+    textarea{overflow: hidden; position: absolute; top: 0; left: 0; height: 100%; width: 100%; resize: none;}
+    pre{display: block; visibility: hidden;}
+    textarea,pre{
+        font-size: 12px; line-height:14px; outline: 0; margin: 0; padding: 0;
+        white-space: pre-wrap; width: 100%; word-wrap: break-word; border: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;  
+    }
+}
+.selectBox{
+    position:relative;width:100px;height:40px;
+    .selectVal{height:100%;line-height:40px;overflow:hidden;}
+    .selectOptions{
+        top:40px; max-height:240px; z-index: 2; background: #fff; 
+        display:none;position: absolute; left:0;overflow:auto; width:100%; box-sizing: border-box;
+        li{
+            height:35px;line-height:35px;
+        }
+    }
+    .selectVal,.selectOptions{border: #000 1px solid;}
+}
+.checkBox{
+    .radio.cur{color: red;}
+}
