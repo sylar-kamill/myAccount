@@ -1,3 +1,5 @@
+#本地测试
+gulp
 #解压缩
 gulp ds --pw yourCode#yourId
 #压缩
