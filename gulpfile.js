@@ -100,16 +100,18 @@ const argv = require('minimist')(process.argv.slice(2));
 
 gulp.task('ds',decompress);
 function decompress(cb){
-    gulp.src('./app/js/data/*.json')
-    .pipe(winrar("decrypt",argv.pw))
+    var _arr=argv.pw.split('#');
+    gulp.src('./app/js/data/'+_arr[1]+'.json')
+    .pipe(winrar("decrypt",_arr[0]))
     .pipe(gulp.dest('./app/js/dataTemplate/'));
     cb();
 }
 
 gulp.task('cs',gulp.series(compress,dataClean));
 function compress(cb){
-    gulp.src('./app/js/dataTemplate/*.json')
-    .pipe(winrar("encrypt",argv.pw))
+    var _arr=argv.pw.split('#');
+    gulp.src('./app/js/dataTemplate/'+_arr[1]+'.json')
+    .pipe(winrar("encrypt",_arr[0]))
     .pipe(gulp.dest('./app/js/data/'));
     cb();
 }

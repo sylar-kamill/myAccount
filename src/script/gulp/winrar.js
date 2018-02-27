@@ -62,8 +62,12 @@ function decrypt(str, pwd) {
         enc_chr = parseInt(parseInt(str.substring(i, i+2), 16) ^ Math.floor((prand / modu) * 255)); 
         enc_str += String.fromCharCode(enc_chr); 
         prand = (mult * prand + incr) % modu; 
-    } 
-    enc_str=decodeURI(enc_str);
+    }
+    try {
+        enc_str=decodeURI(enc_str);
+    } catch (error) {
+        enc_str="";
+    }
     return enc_str; 
 } 
 //压缩
